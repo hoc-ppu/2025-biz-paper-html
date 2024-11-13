@@ -1,0 +1,223 @@
+// The intent of this file is to create styles for the 2024 redesign
+// these styles will be put into a <style/> tag in the <head> of the HTML
+// templates until such time as we can put a new .css file on the server.
+
+
+@use 'sass:math';
+
+/* Fonts */
+// At one time we got fonts from, https://designsystem.parliament.uk/apps/commons-business/v1.0/fonts but that no longer works because of the same origin policy.
+// then we got fonts from, https://commonsbusiness.parliament.uk/external/html-papers/v1.0
+// but that also no longer works.
+// So now we get fonts from, https://commonsbusiness.parliament.uk/dist
+
+// $old-font-path: 'https://commonsbusiness.parliament.uk/external/html-papers/v1.0';
+// $ald-font-path: 'https://commonsbusiness.parliament.uk/dist';
+$font-path: '/dist';
+
+// I don't think we should include businesspapers.scss here.
+// It's easier to include all teh styles we need and then make changes.
+// @import 'businesspapers.scss';
+
+// import colours from PDS design system
+@import '../Design_System_SASS/sass/compatibility/bootstrap-3/bootstrap-3-shims.scss';
+@import '../Design_System_SASS/sass/core/colours.scss';
+@import '../Design_System_SASS/sass/core/fonts.scss';
+@import '../Design_System_SASS/sass/core/font-sizes.scss';
+
+@import 'variables.scss';
+// import vnp styles
+@import 'vnp.scss';
+@import 'edm.scss';
+
+
+/*#region Variables */
+
+
+
+/*#endregion Variables */
+
+/*#region Containers */
+
+// Prefer bootstrap 3 container-fluid but we want a max width
+.container-fluid {
+    max-width: 1140px;
+}
+
+.OP-left-margin {
+    overflow-wrap: break-word;
+}
+
+/*#endregion Containers */
+
+
+/*#region Headings */
+
+.DocumentTitle {
+    border-bottom: 1px solid;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    padding-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.MainTitle {
+    border-bottom: 1px solid;
+    font-size: 1.618em;
+    font-weight: 500;
+    padding-bottom: 0.5em;
+}
+
+.paraBusinessSub-SectionHeading {
+    font-size: 1.309em;
+    letter-spacing: 0.025em;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0.1em 3em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Heading3Underlined {
+    border-bottom: 1px solid;
+    font-size: 1.309em;
+    font-weight: 500;
+    margin-top: 45px;
+    margin-bottom: 27px;
+    padding-bottom: 0.309em;
+}
+
+.paraChamberSummaryHeading {
+    // was text-transform: uppercase; before 2024 redesign
+    text-transform: none;
+}
+
+.paraBusinessTodayChamberHeading {
+    margin-left: 0 !important;
+    text-align: center;
+    padding-left: 3em !important;
+    padding-right: 1em !important;
+}
+
+.paraBusinessItemHeading {
+    text-transform: none;
+}
+
+/*#endregion Headings */
+
+/*#region Paragraphs */
+
+.NumberedParaHanging {
+    margin-left: $indent-amount;
+}
+
+.NumberedParaHanging span {
+    display: inline-block;
+    margin-left: - $indent-amount;
+    padding-right: 1rem;
+    text-align: right;
+    width: $indent-amount;
+}
+
+.paraMotionSub-Paragraph,
+.paraAmendmentSponsor {
+    margin-left: $indent-amount;
+}
+
+.paraAmendmentSponsor {
+    @include font-bold();
+}
+
+.paraMotionSubSub-Paragraph {
+    margin-left: $indent-amount * 2;
+}
+
+.MotionSponsorGroup_indent {
+    margin-left: $indent-amount;
+}
+
+/*#endregion Paragraphs */
+
+/*#region Tables */
+
+.Basic-Text-Frame table {
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 45px;
+    margin-bottom: 27px;
+    width: 100%;
+}
+
+.Basic-Text-Frame table td {
+    border: 0;
+    padding: 0.5em;
+    vertical-align: top;
+}
+
+.Basic-Text-Frame table thead td {
+    background-color: #EAEAEA;
+    font-weight: 500;
+}
+
+.Basic-Text-Frame table thead td p {
+    margin: 0;
+}
+
+/*#endregion Tables*/
+
+/*#region Dividers */
+
+hr {
+    border-top: 1px solid;
+    display: block;
+    height: 1px;
+    padding: 1.55em 0;
+    width: 8em;
+}
+
+/*#endregion Dividers*/
+
+
+/*#region Tables */
+
+// sumary agenda table
+.Front-Page-Table,
+.Front-Page-Table td {
+    border: none;
+}
+
+.Front-Page-Table td {
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+.Front-Page-Table .Alline-Right {
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-right-color: $colour-grey-1;
+    padding-right: 0.75em;
+}
+
+.Front-Page-Table .Alline-left {
+    padding-left: 0.75em;
+}
+
+.Alline-Right {
+    text-align: right;
+}
+
+// .InvisibleTable
+
+.InvisibleTable {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: none;
+    width: 100%;
+}
+.InvisibleTable hr {
+     background-color: $colour-grey-1;
+}
+
+
+/*#endregion Tables */
