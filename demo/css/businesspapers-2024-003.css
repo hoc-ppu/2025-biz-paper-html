@@ -1,0 +1,286 @@
+/*#region Variables */
+/*#endregion Variables */
+/*#region Layout */
+.OP-left-margin {
+  margin-left: 0 !important;
+}
+
+.questionsSection {
+  margin-top: 1.55em;
+  border-top: 1px solid;
+  padding-top: 1.55em;
+}
+
+/*#endregion Layout */
+/*#region Headings */
+.DocumentTitle,
+.Title {
+  border-bottom: 1px solid;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  margin-bottom: 18px !important;
+  padding-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.MainTitle,
+.mainTitle,
+#content-goes-here h2 {
+  border-bottom: 1px solid;
+  color: #4d4d4d !important;
+  font-size: 1.618em !important;
+  font-weight: 500;
+  line-height: 1.5 !important;
+  padding-bottom: 0.5em;
+}
+
+.questionsSection h2.date {
+  border-bottom: none !important;
+  font-weight: 400 !important;
+  padding-bottom: 0 !important;
+}
+
+.questionsSection h3.target {
+  font-size: 1em;
+}
+
+.paraBusinessSub-SectionHeading {
+  background-color: #717171;
+  color: #fff;
+  font-size: 1.309em;
+  letter-spacing: 0.025em;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0.1em 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.Heading3Underlined {
+  border-bottom: 1px solid;
+  font-size: 1.309em;
+  font-weight: 500;
+  margin-top: 45px;
+  margin-bottom: 27px;
+  padding-bottom: 0.309em;
+}
+
+.paraChamberSummaryHeading {
+  font-size: 1.2em;
+  margin-top: 36px;
+  margin-bottom: 27px;
+  text-transform: none !important;
+}
+
+.paraBusinessTodayChamberHeading,
+.paraBusinessSub-SectionHeading {
+  margin-left: 0 !important;
+  text-align: center;
+  line-height: 1.1;
+  padding: 0.1em 1.5em 0.2em 1.5em !important;
+}
+
+.paraBusinessItemHeading {
+  text-transform: none;
+}
+
+.anchor-link {
+  display: inline-block !important;
+  height: 1em;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  position: relative;
+}
+
+.anchor-link::after {
+  display: block;
+  margin-top: -0.075em;
+  padding-left: 0.5em;
+  position: absolute;
+}
+
+.Tabled-Names {
+  margin-bottom: 9px;
+  text-align: left;
+}
+
+.Tabled-Names .Roman {
+  margin-left: 3em;
+}
+
+/*#endregion Headings */
+/*#region Paragraphs */
+.NumberedParaHanging {
+  margin-left: 2.2rem;
+}
+
+.SubNumberedPara {
+  margin-left: 4.4rem;
+}
+
+.NumberedParaHanging span,
+.SubNumberedPara span {
+  display: inline-block;
+  margin-left: -2.2rem;
+  padding-right: 1rem;
+  text-align: right;
+  width: auto;
+  min-width: 2.2rem;
+}
+
+.paraMotionSub-Paragraph,
+.paraAmendmentSponsor {
+  margin-left: 2.2rem;
+}
+
+.paraAmendmentSponsor,
+.A2A-Sponsor {
+  font-weight: 500;
+}
+
+.paraMotionSubSub-Paragraph,
+.paraMotionSub-Sub-Paragraph,
+.A2A-Normal,
+.A2A-Sponsor,
+.A2A-SponsorGroup {
+  margin-left: 4.4rem;
+}
+
+.paraAmendmentSponsor,
+.A2A-Sponsor {
+  margin-bottom: 0;
+}
+
+.MotionSponsorGroup_indent {
+  margin-left: 2.2rem;
+}
+
+.MotionSponsorGroup_indent,
+.A2A-SponsorGroup {
+  margin-top: 18px;
+}
+
+.MotionSponsorGroup_indent span,
+.A2A-SponsorGroup span {
+  padding-right: 2.2rem !important;
+  padding-left: 0 !important;
+}
+
+.paraMotionSub-Sub-Sub-Paragraph {
+  margin-left: 6.6rem;
+}
+
+.hanging1 {
+  padding-right: 0.5em;
+}
+
+.EDMTitle {
+  font-size: 1em !important;
+  line-height: 1.5 !important;
+  margin-bottom: 0 !important;
+  padding-left: 3em;
+}
+
+.EDMTitle .UIN {
+  display: inline-block;
+  margin-right: 0.5em;
+  margin-left: -3em;
+  min-width: 2.5em;
+}
+
+.questionContainer {
+  padding-left: 2em;
+}
+
+.questionNumber {
+  display: inline-block;
+  margin-right: 0.5em;
+  margin-left: -2em;
+  min-width: 1.5em;
+}
+
+/*#endregion Paragraphs */
+/*#region Tables */
+.Front-Page-Table td {
+  vertical-align: top;
+}
+
+
+table.InvisibleTable {
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: block;
+  margin-top: 0 !important;
+  margin-bottom: 27px;
+  margin-left: 0 !important;
+}
+
+table.InvisibleTable td {
+  border: 0;
+  padding: 0.25rem 0.5rem;
+  vertical-align: top;
+  width: auto;
+}
+
+@media screen and (max-width: 769px) {
+  table.InvisibleTable{
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    white-space: nowrap;
+  }
+}
+
+
+
+.Basic-Text-Frame table,
+table.StandardTable {
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: block;
+  margin-top: 0 !important;
+  margin-bottom: 27px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  white-space: nowrap;
+}
+
+table.StandardTable {
+  margin-left: 0 !important;
+}
+
+.Basic-Text-Frame table td,
+table.StandardTable td {
+  border: 1px solid;
+  padding: 0.5em 0.75em;
+  vertical-align: top;
+  width: auto;
+}
+
+.Basic-Text-Frame table thead td,
+table.StandardTable thead td {
+  background-color: #EAEAEA;
+  font-weight: 500;
+}
+
+.Basic-Text-Frame table thead td p {
+  margin: 0;
+}
+
+/*#endregion Tables*/
+/*#region Dividers */
+.Line_Interstitial,
+.ShortDevider {
+  border-top: 1px solid;
+  display: block;
+  height: 1px;
+  margin: 1.55em 0 !important;
+  overflow: hidden;
+  padding: 0 !important;
+  width: 3em;
+}
+
+/*#endregion Dividers*/
+
+/*# sourceMappingURL=businesspapers-2024.css.map */
