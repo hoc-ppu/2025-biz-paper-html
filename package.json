@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hoc-ppu/business-papers-redesign.git"
+    "url": "git+https://github.com/hoc-ppu/2025-biz-paper-html.git"
   },
   "author": "Mark Fawcett",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/hoc-ppu/business-papers-redesign/issues"
+    "url": "https://github.com/hoc-ppu/2025-biz-paper-html/issues"
   },
-  "homepage": "https://github.com/hoc-ppu/business-papers-redesign#readme",
+  "homepage": "https://github.com/hoc-ppu/2025-biz-paper-html#readme",
   "devDependencies": {
     "concurrently": "^8.2.2",
     "gh-pages": "^6.1.1",
