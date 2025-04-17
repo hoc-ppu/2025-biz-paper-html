@@ -248,7 +248,7 @@ table.InvisibleTable td {
 
 .Basic-Text-Frame table,
 table.StandardTable {
-  border: 0;
+  /*border: 0;
   border-collapse: collapse;
   border-spacing: 0;
   display: block;
@@ -256,7 +256,7 @@ table.StandardTable {
   margin-bottom: 27px;
   overflow-x: auto;
   overscroll-behavior-x: contain;
-  white-space: nowrap;
+  white-space: nowrap;*/
 }
 
 table.StandardTable {
